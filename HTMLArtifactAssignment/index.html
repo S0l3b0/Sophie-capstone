@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 5px;">Geography Quiz</h1>
+    <h2 style="margin-top: 1px;">Test your geography knowledge</h2>
+    <form action="results.html" id="geographyQuiz" method="get">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" placeholder="Username"><br>
+        <label for="password">Password (need at least 1 number, 1 uppercase letter, 1 lowercase letter, 1 special character, and 6 characters): </label>
+        <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&*?]).{6,}" type="password" id="password" name="password" placeholder="Password">
+
+        <h4 style="margin-bottom: 5px;">What is the second smallest country in the world?</h4>
+        <input value="monaco" type="radio" id="monaco" name="smallest" required>
+        <label for="monaco">Monaco</label><br>
+        <input value="malta" type="radio" id="malta" name="smallest">
+        <label for="malta">Malta</label><br>
+        <input value="andorra" type="radio" id="andorra" name="smallest">
+        <label for="andorra">Andorra</label><br>
+        <input value="sanMarino" style="margin-bottom: 15px;" type="radio" id="sanMarino" name="smallest">
+        <label for="sanMarino">San Marino</label>
+
+        <h4 style="margin-bottom: 5px;">What country is this?</h4>
+        <img src="./images/argentina-outline-map-vector-30803290.avif" width="75" style="margin-bottom: -10px;"><br>
+        <input value="belize" type="radio" id="belize" name="outline" required>
+        <label for="belize">Belize</label><br>
+        <input value="portugal" type="radio" id="portugal" name="outline">
+        <label for="Portugal">Portugal</label><br>
+        <input value="argentina" type="radio" id="argentina" name="outline">
+        <label for="argentina">Argentina</label><br>
+        <input value="nicaragua" style="margin-bottom: 15px;" type="radio" id="nicaragua" name="outline">
+        <label for="nicaragua">Nicaragua</label>
+
+        <h4 style="margin-bottom: 5px;">What flag is this?</h4>
+        <img src="./images/Flag_of_Kuwait.svg.png" width="100"><br>
+        <input value="dominicanRepublic" type="radio" id="dominicanRepublic" name="flag" required>
+        <label for="dominicanRepublic">Dominican Republic</label><br>
+        <input value="kuwait" type="radio" id="kuwait" name="flag">
+        <label for="kuwait">Kuwait</label><br>
+        <input value="kiribati" type="radio" id="kiribati" name="flag">
+        <label for="kiribati">Kiribati</label><br>
+        <input value="togo" style="margin-bottom: 15px;" type="radio" id="togo" name="flag">
+        <label for="togo">Togo</label>
+
+        <h4 style="margin-bottom: 5px;">Prague is the capital of what country?</h4>
+        <input value="burkinaFaso" type="radio" id="burkinaFaso" name="capital" required>
+        <label for="burkinaFaso">Burkina Faso</label><br>
+        <input value="czechia" type="radio" id="czechia" name="capital">
+        <label for="czechia">Czechia</label><br>
+        <input value="jordan" type="radio" id="jordan" name="capital">
+        <label for="jordan">Jordan</label><br>
+        <input value="chile" style="margin-bottom: 15px;" type="radio" id="chile" name="capital">
+        <label for="chile">Chile</label>
+
+        <h4 style="margin-bottom: 5px;">Which of the following is a territory?</h4>
+        <input value="palau" type="radio" id="palau" name="territory" required>
+        <label for="palau">Palau</label><br>
+        <input value="fiji" type="radio" id="fiji" name="territory">
+        <label for="fiji">Fiji</label><br>
+        <input value="tuvalu" type="radio" id="tuvalu" name="territory">
+        <label for="tuvalu">Tuvalu</label><br>
+        <input value="guam" style="margin-bottom: 15px;" type="radio" id="guam" name="territory">
+        <label for="guam">Guam</label>
+
+        <h4 style="margin-bottom: 5px;">What continent is Belize in?</h4>
+        <input value="asia" type="radio" id="asia" name="continent" value="asia" required>
+        <label for="asia">Asia</label><br>
+        <input value="europe" type="radio" id="europe" name="continent" value="europe">
+        <label for="europe">Europe</label><br>
+        <input value="northAmerica" type="radio" id="northAmerica" name="continent" value="northAmerica">
+        <label for="northAmerica">North America</label><br>
+        <input value="southAmerica" style="margin-bottom: 15px;" type="radio" id="southAmerica" name="continent">
+        <label for="southAmerica">South America</label><br>
+
+        <label for="prediction">I think I got </label>
+        <select style="margin-bottom: 15px;" name="prediction" id="prediction" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <label for="prediction"> right</label><br>
+        <input type="submit" id="submit" name="submit"><br>
+        <!--<a href="results.html">
+            <button>View Answers</button>
+        </a>-->
+    </form>
+</body>
+</html>
