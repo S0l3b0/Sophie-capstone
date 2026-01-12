@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(42, 19, 42);
+    color: rgb(215, 115, 1);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-size: 75px;
+}
+h4{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+li{
+    list-style-position: inside;
+}
+#italics{
+    font-style: italic;
+}
+.list{
+    font-family: sans-serif;
+}
+img{
+    border-radius: 20px;
+}
